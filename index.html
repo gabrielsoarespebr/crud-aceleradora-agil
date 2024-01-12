@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link
+      rel="shortcut icon"
+      href="assets/gabrielProfilePhoto.jpg"
+      type="image/jpg"
+    />
+    <script src="script.js" defer></script>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-md-row justify-content-around py-5 mx-4 mx-md-0">
+      <!-- PERFIL -->
+      <div class="col-12 col-md-4 text-center">
+        <img
+          class="w-50 rounded-circle"
+          src="assets/gabrielProfilePhoto.jpg"
+          alt="Foto de Gabriel"
+        />
+        <h1>Gabriel Soares</h1>
+        <p>
+          Desenvolvedor Front-End que valoriza a criatividade, objetividade e
+          atenção aos detalhes. Possuo a capacidade de comunicar de modo eficaz,
+          tanto oralmente quanto por escrito, em ambientes de trabalho em
+          equipe. Meu foco é proporcionar a melhor experiência ao usuário,
+          garantindo responsividade em interfaces atraentes, eficientes e
+          funcionais, adaptadas para diferentes dispositivos
+        </p>
+
+        <ul class="list-unstyled">
+          <li>
+            <a
+              class="text-decoration-none"
+              href="https://gabrielsoares.vercel.app"
+              target="_blank"
+              >Portfólio</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none"
+              href="https://www.linkedin.com/in/gabrielsoarespebr/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none"
+              href="https://github.com/gabrielsoarespebr"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none"
+              href="https://codeforces.com/profile/gabrielsoarespebr"
+              target="_blank"
+              >CodeForces</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- LISTA DE TAREFAS -->
+      <div class="col-12 col-md-7">
+        <h2 class="text-center mb-3">Lista de tarefas</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <!-- DIA -->
+          <div class="rounded bg-light col-12 col-md-6 p-3">
+            <h3 class="text-center mt-2 mb-4">
+              DIA <i class="bi bi-sun-fill"></i>
+            </h3>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Inserir tarefa"
+                aria-label="Inserir tarefa"
+                aria-describedby="basic-addon2"
+                id="dayInput"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="dayBtnAddTaskClick"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+            </div>
+            <ol id="dayList" class="p-0 d-flex flex-column gap-2"></ol>
+          </div>
+
+          <!-- NOITE -->
+          <div class="bg-secondary rounded text-white col-12 col-md-6 p-3">
+            <h3 class="text-center mt-2 mb-4">
+              NOITE <i class="bi bi-moon-fill"></i>
+            </h3>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Inserir tarefa"
+                aria-label="Inserir tarefa"
+                aria-describedby="basic-addon2"
+                id="nightInput"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="nightBtnAddTaskClick"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+              </div>
+            </div>
+            <ol id="nightList" class="p-0 d-flex flex-column gap-2"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
